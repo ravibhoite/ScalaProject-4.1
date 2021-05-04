@@ -12,7 +12,7 @@ object MyPOC {
     val sc = new SparkContext("local[*]", "MyPOC")   
     
     // Read each line of my book into an RDD
-    val input = sc.textFile("F:\\VMWareWin10\\Module-5\\Spark\\POCFile\\subtitle.txt")
+    val input = sc.textFile("F:\\VMWareWin10\\Module-5\\Spark\\POCFile\\subtitle2.txt")
     
     // Split into words separated by a space character
     val words = input.flatMap(x => x.split(" "))
